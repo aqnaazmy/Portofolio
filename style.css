@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #00040B;
+}
+nav {
+  position: sticky;
+  background-color: #000b20;
+  justify-content: space-between;
+  display: flex;
+  padding: 1rem 5rem;
+}
+nav div img {
+  width: 100px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: rgb(0, 37, 186);
+}
+.image {
+  width: 40%;
+  height: 90%;
+  padding: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+.content {
+  position: absolute;
+  top: 40%;
+  left: 8%;
+}
+h4 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+h1 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 50px;
+  margin: 20px 0 20px;
+}
+h3 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h3 span {
+  margin-left: 10px;
+  color: #0056ff;
+}
+.content a {
+  text-decoration: none;
+  font-size: 20px;
+  background: #0056ff;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
