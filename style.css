@@ -1,80 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
-  background-color: #00040B;
+    background-color: #00040B;
 }
-nav {
-  position: sticky;
-  background-color: #000b20;
-  justify-content: space-between;
-  display: flex;
-  padding: 1rem 5rem;
+.navBar{
+    background-color: #031b47;
+    box-shadow: rgba(0, 47, 255, 0.301) 0px 4px 74px;
+    position: fixed;
+    width: 100%;
 }
-nav div img {
-  width: 100px;
+.navBar nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 15em;
+    align-items: center;
+    
 }
-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  list-style: none;
+.logo a {
+    display: flex;
+    text-decoration: none;
+    color: #1d2434;
+    align-items: center;
 }
-nav ul li a {
-  text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
-  padding: 10px;
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.logo a img {
+    width: 120px;
+    padding: 12px;
 }
-nav ul li a:hover {
-  color: rgb(0, 37, 186);
+.sideNav ul {
+    list-style: none;
+    display: flex;
+    list-style-type: none;
 }
-.image {
-  width: 40%;
-  height: 90%;
-  padding: 40px;
-  position: absolute;
-  bottom: 0;
-  right: 50px;
+.sideNav li {
+    padding: 2px 15px;
+    height: 2em;
+    font-size: 15px;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
 }
-.content {
-  position: absolute;
-  top: 40%;
-  left: 8%;
+.sideNav li a {
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
-h4 {
-  color: white;
-  font-family: "Ubuntu", sans-serif;
-  letter-spacing: 2px;
-  font-size: 20px;
+.sideNav li:hover a {
+    color: rgb(0, 37, 186);
 }
-h1 {
-  color: white;
-  letter-spacing: 2px;
-  font-size: 50px;
-  margin: 20px 0 20px;
+.sideNav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
 }
-h3 {
-  font-family: sans-serif;
-  color: white;
-  font-size: 25px;
-  margin-bottom: 50px;
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 66px;
+    overflow: hidden;
+    background-color: #00040B;
 }
-h3 span {
-  margin-left: 10px;
-  color: #0056ff;
+.hero-section .hero-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 15em;
+    padding-right: 7.5em;
+    align-items: center;
 }
-.content a {
-  text-decoration: none;
-  font-size: 20px;
-  background: #0056ff;
-  color: white;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 5px;
+.judul{
+    color: #ffffff;
+}
+.judul h4 {
+    font-size: 25px;
+}
+.judul h1 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin: 20px 0 20px;
+}
+.judul h3 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.judul h3 span {
+    margin-left: 10px;
+    color: #0056ff;
+}
+.judul .btn {
+    background-color: #0056ff;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.hero-section .hero-container .judul .btn :hover {
+    /* background-color: transparent;
+    border: 2px solid blue; */
+    color: rgb(0, 37, 186);
+}
+
+.judul a {
+    text-decoration: none;
+    color: #07096d;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* aboute */
+.about-me {
+    background-color: #000B20;
+    padding: 15em 20em;
+    padding-top: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+.about-me h4 {
+    margin-bottom: 20px;
+    padding-top: 2px;
+    padding-bottom: 25px;
+    font-size: 2em;
+    text-align: center;
+}
+.about-me h3 {
+    text-align: center;
+    padding-bottom: 75px;
+    font-size: 20px;
+}
+.about-me h3 span{
+    padding-bottom: 25px;
+    color: #0056ff;
+}
+.about-me p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/* service */
+.title{
+    text-align: center;
+    color: #0003c2;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 380px;
+    padding: 20px 35px;
+    background: #000B20;
+    border-radius: 20px;
+    margin: 30px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+.card h5{
+    color: #0056ff;
+    font-size: 23px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+.pra p{
+    padding: 30px 5px;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.card:hover {
+    background: rgb(1, 9, 85);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    
+}
+/* project */
+.project-title{
+    text-align: center;
+    color: #0003c2;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.box-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card-project{
+    height: 300px;
+    width: 315px;
+    padding: 35px 35px;
+    background: url("img/Frame\ 15.png") no-repeat center;
+    border-radius: 20px;
+    margin: 30px ;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+.card-project:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    
+}
+
+
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+.contact-container {
+    padding: 5em 0;
+    color: #ffffff;
+    width: 750px;
+}
+
+.contact-container h2 {
+    padding-bottom: 25px;
+    font-size: 2em;
+}
+
+input, textarea {
+    flex: 1;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    width: 100%;
+}
+label {
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+button {
+    background-color: #00218d;
+    color: #000000;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
 }

@@ -1,49 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aqnaazmy</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqnaazmy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav>
-    <div class="logo"><a href="#"><img src="img/logo.png" alt="my logo"></a></div>
-    <ul class="menu">
-      <li><a href="#home" class="menu-btn">Home</a></li>
-      <li><a href="#about" class="menu-btn">About</a></li>
-      <li><a href="#services" class="menu-btn">Services</a></li>
-      <li><a href="#project" class "menu-btn">Project</a></li>
-      <li><a href="#contact" class="menu-btn">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Home -->
-    <div class="image">
-      <img src="img/Foto.png" alt="">
-    </div>
-    <div class="content">
-      <h4>Hello Everyone !</h4>
-      <h1>I'm Aqnaazmy</h1>
-      <h3>And I'm a <span>Mobile Developer</span></h3>
-      <a href="#">Hire Me</a>
+    <!--navbar-->
+    <div class="navBar">
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <img src="img/logo.png" alt="My Logo">
+                </a>
+            </div>
+            <div class="sideNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">My Service</a></li>
+                    <li><a href="#Project">Project</a></li>
+                    <li><a href="#contact">Contac</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-  <!-- About Me -->
-  <section class="about" id="about">
-    <div class="max-width">
-      <h2 class="title">About me</h2>
-      <div class="about-content">
-        <div class="column right">
-          <div class="text">I'm Aqna and I'm a <span class="typing-2"></span></div>
-          <p>  
-            HI! My name is M.AQNA AZMI, I was born on July 9th, 2002. I am an Informatics engineering student at a vocational campus in Tegal city, at Harapan Bersama Polytechnic. In this campus, I strive to continuously learn and develop my skills in the field of information technology.
-          </p>
-          <br>
-          <p>Since I started my school days, I have been amazed by the new facts in the technology world that made me interested in exploring everything related to this field. Hopefully, many people will experience the same thing.</p>
+    <!--hero section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="judul">
+                <h4>Hello Everyone !</h4>
+                <h1>I'm Aqnaazmy</h1>
+                <h3>And I'm a <span>Mobile Developer</span></h3>
+                <div class="btn">
+                    <a href="#"" target="_blank">Hire Me</a>
+                </div>
+            </div>
+            <img src="img/Foto.png" alt="developer_male">
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <!--about us-->
+    <section id="about">
+        <div class="about-me">
+            <h4>About Me </h4>
+            <h3>I'm Aqna and I'm a <span>Mobile Developer</span></h3>
+            <p>Hello, I'm M. Aqna Azmi. I'm a third-semester student with a keen interest in mobile app development, particularly for the Android platform. I'm constantly learning and honing my technical skills.<br> <br> I'm very enthusiastic about technology and believe that mobile apps have great potential to make life better. I enjoy exploring the world of programming and strive to stay up to date with the latest developments in the industry.<br><br> Besides coding, I also have an interest in user interface design and providing a great user experience. I believe that the combination of technical skills and good design is key to creating successful applications. </p>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="title">
+            <h2>My services</h2>
+        </div>            
+            <div class="box">
+                <div class="card">
+                    <h5>Web Design</h5>
+                    <div class="pra">
+                    <p>In web design services, I create an attractive and functional appearance for your website. Every element, from layout to color selection, was carefully considered. I also make sure that every site I create has a responsive design so that it displays perfectly on a variety of devices.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5>Mobile App</h5>
+                    <div class="pra">
+                    <p>Mobile applications have become an inseparable part of our lives. I can help you design and develop a mobile application that suits your needs. From iOS to Android, the apps I develop ensure a smooth and high-quality user experience.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5>App Design</h5>
+                    <div class="pra">
+                    <p>A well-functioning application also needs to have an attractive design and be easy to use. I specialize in creating intuitive user interfaces and stunning aesthetics. From the icons to the layout, I made sure that every detail was taken care of.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- My Latest Project -->
+    <section class="Project" id="Project">
+        <div class="project title">
+            <h2>My Latest Project</h2>
+        </div>            
+            <div class="box-project">
+                <div class="card-project">
+                   
+                </div>
+                <div class="card-project">
+                   
+                </div>
+                <div class="card-project">
+                    
+                </div>
+            </div>
+            <div class="box-project">
+                <div class="card-project">
+                   
+                </div>
+                <div class="card-project">
+                   
+                </div>
+                <div class="card-project">
+                   
+                </div>
+            </div>
+    </section>
+
+
+    <!--contact-->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Hubungi Saya</h2>
+            <form>
+                <label for="name">Nama</label>
+                <input type="text" id="name ">
+                <label for="email">Email</label>
+                <input type="email" id="email ">
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <!-- <div class="footer-content">
+            <h3>Portofolio</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/muhm_dffa/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Portofolio.</p>
+        </div>
+    </footer> -->
 </body>
 </html>
